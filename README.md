@@ -31,6 +31,8 @@ sudo nvme list
 sudo nvme smart-log /dev/nvme0n1
 ```
 - The above returns no errors, they are not ruled out as being the culprit. The frequency of the occurance happens "faster" when several applications are running simultaneously. 
+- Correction: The gzip system76 log file(s) have not been reviewed yet
+
 ### reference: 
 [https://support.system76.com/articles/freezing-behavior/](https://support.system76.com/articles/freezing-behavior/)
 https://github.com/pop-os/pop/issues/1069
