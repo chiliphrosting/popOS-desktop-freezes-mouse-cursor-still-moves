@@ -7,7 +7,7 @@ As of this writing (_18Aug23_), I am still investigating solutions since the iss
 
 * Occurs much faster when using a browser in the host computer, especially when many tabs are open.
 * Doesn't occur when locking the screen.
-* Seems to occur on `gnome` desktops. 
+* Seems to occur on `gnome` desktops.
 * PERFORMANCE
 	- No observable reduction in performance when `ssh` into machine that the desktop froze. 
 
