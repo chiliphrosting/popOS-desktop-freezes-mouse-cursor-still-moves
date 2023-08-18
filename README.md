@@ -49,6 +49,13 @@ sudo nvme smart-log /dev/nvme0n1
 
 - `killall [option] gnome-shell`
 
+## GNOME-EXTENSIONS
+Disable all gnome extensions. 
+
+1. Hit the super key and type `extensions` click on the icon to open the extensions. 
+2. Toggle all the extensions off. 
+
+
 ## GRAPHICS CARD DRIVER UPDATE
 _using Intel integrated graphics_ 
 
@@ -62,6 +69,7 @@ _using Intel integrated graphics_
 
 - Disable notifications
 - Disable HIDPI
+
 
 ## IF DESKTOP FROZEN
 _This is the last resort_:
