@@ -50,7 +50,7 @@ sudo nvme smart-log /dev/nvme0n1
 - `killall [option] gnome-shell`
 
 ## GNOME-EXTENSIONS
-[Disable all gnome extensions.](GNOME-EXTENSIONS.md)
+Disable all gnome extensions. 
 
 1. Hit the super key and type `extensions` click on the icon to open the extensions gui. 
 2. Toggle all the extensions off. Close the extensions gui.
