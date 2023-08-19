@@ -9,10 +9,8 @@ As of this writing (_18Aug23_), I am still investigating solutions since the iss
 * Doesn't occur when locking the screen.
 * Seems to occur on `gnome` desktops.
 * PERFORMANCE
-	- No observable reduction in performance when `ssh` into machine that the desktop froze. 
+	- No observable reduction in performance when `ssh` into machine when the desktop freezes. 
 
-
-__ISSUE__: [https://github.com/pop-os/pop/issues/1069](https://support.system76.com/articles/freezing-behavior/)
 
 # ROOT CAUSE
 These are the potential causes of the issue:
@@ -51,10 +49,6 @@ sudo nvme smart-log /dev/nvme0n1
 
 ## GNOME-EXTENSIONS
 [Disable all gnome extensions.](GNOME-EXTENSIONS.md)
-
-1. Hit the super key and type `extensions` click on the icon to open the extensions gui. 
-2. Toggle all the extensions off. Close the extensions gui.
-
 
 ## GRAPHICS CARD DRIVER UPDATE
 _using Intel integrated graphics_ 
