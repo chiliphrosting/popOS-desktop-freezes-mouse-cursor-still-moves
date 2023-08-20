@@ -63,6 +63,8 @@ _using Intel integrated graphics_
 - Disable notifications
 - Disable HIDPI
 
+## GDM-X-SESSION
+[kill process gdm-x-session](GDM-X-SESSION.md)
 
 ## IF DESKTOP FROZEN
 _This is the last resort_:
