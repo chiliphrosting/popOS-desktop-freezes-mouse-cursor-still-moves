@@ -5,6 +5,8 @@ Some of the solutions listed in this __README.md__ may resolve the issue(s). Res
 
 As of this writing (_18Aug23_), I am still investigating solutions since the issue still persists. As long as I am __not__ using a browser on the host machine, it seems to "__delay__" the desktop from freezing.   
 
+The issue seemed to have happened after both a recent `update` and `upgrade`. 
+
 * Occurs much faster when using a browser in the host computer, especially when many tabs are open.
 * Doesn't occur when locking the screen.
 * Seems to occur on `gnome` desktops.

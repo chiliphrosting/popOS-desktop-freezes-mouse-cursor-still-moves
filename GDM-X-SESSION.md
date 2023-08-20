@@ -6,6 +6,10 @@
 - `ssh`: `ssh` into the machine that is freezing.
 - `htop`: remote monitor system activities.
 
+## Scripts
+_If you want only the script:_
+[gdm-x-session](scripts/gdm-x-session.sh)
+
 # STEPS
 _Currently, I am testing whether or not it stops the running processes after the computer freezes._
 
