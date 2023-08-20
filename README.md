@@ -10,7 +10,7 @@ As of this writing (_18Aug23_), I am still investigating solutions since the iss
 * Seems to occur on `gnome` desktops.
 * PERFORMANCE
 	- No observable reduction in performance when `ssh` into machine when the desktop freezes. 
-
+* The issue may be a combination a combination of issues. 
 
 # ROOT CAUSE
 These are the potential causes of the issue:
@@ -44,8 +44,7 @@ sudo nvme smart-log /dev/nvme0n1
 - Correction: The gzip system76 log file(s) have not been reviewed yet
 
 ## GNOME DESKTOP RESET
-
-- `killall [option] gnome-shell`
+[Killall gnome-shell processes](GNOME-SHELL.md)
 
 ## GNOME-EXTENSIONS
 [Disable all gnome extensions.](GNOME-EXTENSIONS.md)
