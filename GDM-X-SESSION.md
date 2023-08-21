@@ -10,6 +10,10 @@
 _If you want only the script:_
 [gdm-x-session](scripts/gdm-x-session.sh)
 
+
+## <span style="color:red">Warning</span>
+_<span style="color:red">Running this will stop child processes.</span>_
+
 # STEPS
 _Currently, I am testing whether or not it stops the running processes after the computer freezes._
 
