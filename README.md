@@ -15,7 +15,7 @@ The issue seemed to have happened after both a recent `update` and `upgrade`.
 * Seems to occur on `gnome` desktops.
 * PERFORMANCE
 	- No observable reduction in performance when `ssh` into machine when the desktop freezes. 
-* The issue may be a combination a combination of issues. 
+* The issue may be a combination of issues. 
 
 # ROOT CAUSE
 These are the potential causes of the issue:
@@ -54,6 +54,9 @@ sudo nvme smart-log /dev/nvme0n1
 ```
 - The above returns no errors, they are not ruled out as being the culprit. The frequency of the occurance happens "faster" when several applications are running simultaneously. 
 - Correction: The gzip system76 log file(s) have not been reviewed yet
+
+## UFW BLOCK
+[UFW BLOCK could be the reason why the desktop is freezing!](UFW-BLOCK.md)
 
 ## SYSTEM CONTROL STATUS CHANGE 
 [Restart gdm3 in system control.](SYSTEMCTL-STATUS.md)
