@@ -22,6 +22,12 @@ These are the potential causes of the issue:
 - GNOME
 - VM (recently updated)
 
+__ERROR WHEN ISSUE ARISES FROM system logs__ (I redacted some info): 
+	DATE-TIME USER kernel: [ num ] i915 0000:00:02.0: [drm] *ERROR* [CRTC:131:pipe B] flip_done timed out
+	DATE-TIME USER /usr/libexec/gdm-x-session[ num ]: (II) event8  - Logitech Trackball: SYN_DROPPED event - some input events have been lost.
+	DATE-TIME USER kernel: [ num ] i915 0000:00:02.0: [drm] *ERROR* flip_done timed out
+	DATE-TIME USER kernel: [ num ] i915 0000:00:02.0: [drm] *ERROR* [CRTC:131:pipe B] commit wait timed out
+
 # STEPS
 
 ## INITIAL TESTS IF ISSUE IS FROM RAM or HD
