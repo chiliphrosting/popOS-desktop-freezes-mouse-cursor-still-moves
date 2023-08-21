@@ -12,7 +12,7 @@
 
 
 ## <span style="color:red">Warning</span>
-_<span style="color:red">Running this will stop child processes.</span>_
+_<span style="color:red">Running this will end the current session and you will need to log back in.</span>_
 
 # STEPS
 _Currently, I am testing whether or not it stops restarting the process vs killing the process is "more effective " before the computer freezes._

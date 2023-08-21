@@ -1,4 +1,7 @@
 # BACKGROUND
+_This is being revised on the fly, so please excuse some of the typos, etc as I am trying to resolve the issue while documenting my the process._
+
+
 The Desktop for PopOs and sometimes the VMs, themselves, are locking up. When remote via `ssh` sometimes the shell freezes and other times it operates fine. Using `htop` shows system is running normal.   
 
 Some of the solutions listed in this __README.md__ may resolve the issue(s). Results may vary since the configurations from everyones' machines are different. 
@@ -84,9 +87,10 @@ Press Alt + Print Sceen + REISUB.
 
 This does not resolve the issue but only does a soft reboot of the system. 
 
-### reference: 
+### reference:
 * [https://support.system76.com/articles/freezing-behavior/](https://support.system76.com/articles/freezing-behavior/)
 * [https://github.com/pop-os/pop/issues/1069](https://github.com/pop-os/pop/issues/1069)
+* [https://github.com/pop-os/pop/issues/959](https://github.com/pop-os/pop/issues/959)
 
 # CONCLUSION
 
