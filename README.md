@@ -16,6 +16,7 @@ The issue seemed to have happened after both a recent `update` and `upgrade`.
 * PERFORMANCE
 	- No observable reduction in performance when `ssh` into machine when the desktop freezes. 
 * The issue may be a combination of issues. 
+* The fan speed increases when the screen freezes, but with no noticable increase in processes consuming hardware resources. 
 
 # ROOT CAUSE
 These are the potential causes of the issue:
@@ -54,6 +55,9 @@ sudo nvme smart-log /dev/nvme0n1
 ```
 - The above returns no errors, they are not ruled out as being the culprit. The frequency of the occurance happens "faster" when several applications are running simultaneously. 
 - Correction: The gzip system76 log file(s) have not been reviewed yet
+
+## HARDWARE DISCONNECT
+[Disconnecting the additional monitor.](HW.md)
 
 ## UFW BLOCK
 [UFW BLOCK could be the reason why the desktop is freezing!](UFW-BLOCK.md)

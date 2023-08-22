@@ -21,11 +21,13 @@ __DO NOT POST THE IP ADDRESS AND MAC ADDRESS TO THE PUBLIC!__
 
 # CONCLUSION
 
+- While initially removing the rogue device from the network resulted in no `*ERROR*`. The following day the same `*ERROR*` occurred but much worse, with the `*ERROR*` printing on the main display without being able to type. Using __REISUB__ rebooted the PC.  
+
 - `syslog` shows of `[UFW BLOCK]` has not appeared since removing the device (phone) from the network. 
 - Unknown whether the device or an app is attempting to connecting to the pc. 
 - "Different" `MAC` addresses show up in the `[UFW BLOCK]` over the course of monitoring for several days, could suggest the device is virtualizing the address. 
 - Unknown if the `[UFW BLOCK]` is from the brand, model, or different applications. 
-
+- __REMOVING THE ROGUE DEVICE DID NOT RESULT IN PREVENTING THE ISSUE FROM OCCURRING.__
 
 <!--
 drafted: 
