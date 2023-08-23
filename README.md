@@ -1,5 +1,5 @@
 # BACKGROUND
-_This is being revised on the fly, so please excuse some of the typos, etc as I am trying to resolve the issue while documenting my the process._
+_This is being revised on the fly, so please excuse some of the typos, etc as I am trying to resolve the issue while documenting the process._
 
 
 The Desktop for PopOs and sometimes the VMs, themselves, are locking up. When remote via `ssh` sometimes the shell freezes and other times it operates fine. Using `htop` shows system is running normal.   
