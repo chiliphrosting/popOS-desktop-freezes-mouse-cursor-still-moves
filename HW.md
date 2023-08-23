@@ -20,6 +20,9 @@ machine that is freezing.
 
 # CONCLUSION
 
+
+- No `*ERRORS*` have occurred since unplugging the additional monitor at the time of this writing (23Aug23): PM.  
+- No `*ERRORS*` have occurred since unplugging the additional monitor at the time of this writing (23Aug23): AM.  
 - No `*ERRORS*` have occurred since unplugging the additional monitor at the time of this writing (22Aug23).  
 
 <!--
