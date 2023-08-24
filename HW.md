@@ -1,11 +1,11 @@
 # BACKGROUND
-After removing rogue device from network, the pc still froze, only that this time when running `sudo systemctl restart gdm3`, the device screen would print out the `syslog i915 [drm] *ERROR*`. Several VMs and chromium based browser were open at the time of freezing. 
+After removing rogue device from network, the pc still froze, only that this time when running `sudo systemctl restart gdm3`, the device screen would print out the `syslog i915 [drm] *ERROR*`. Several VMs and chromium based browser were open at the time of freezing.
 
 # ITEM
 - `ssh`: `ssh` into the :w:q
 machine that is freezing.
 - `htop`: remote monitor system activities.
-- Other HDMI displays 
+- Other HDMI displays
 
 <!-- ## Scripts -->
 
@@ -15,7 +15,7 @@ machine that is freezing.
 # STEPS
 
 1. Before starting PC, disconnecting any additional displays.  
-2. Reboot if needed if already have the additional display connected. 
+2. Reboot if needed if you still have the additional display connected.
 
 
 # CONCLUSION

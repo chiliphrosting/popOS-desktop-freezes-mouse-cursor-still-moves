@@ -16,7 +16,7 @@ The origin of the desktop freezing seemed to have happened after both a recent `
 * Seems to occur on `gnome` desktops.
 * PERFORMANCE
 	- No observable reduction in performance when `ssh` into machine when the desktop freezes. 
-* The issue may be a combination of issues. 
+* The issue may be a combination of issues.
 * The fan speed does increase when the screen freezes, but with no noticable increase in processes consuming sofware or hardware resources. 
 
 ## WARNING
@@ -60,7 +60,7 @@ sudo nvme list
 sudo nvme smart-log /dev/nvme0n1
 ```
 - The above returns no errors, they are not ruled out as being the culprit. The frequency of the occurance happens "faster" when several applications are running simultaneously. 
-- Correction: The gzip system76 log file(s) have not been reviewed yet
+- The gzip system76 log file(s) reviewed (24Aug23).
 
 ## HARDWARE DISCONNECT
 [Disconnecting the additional monitor.](HW.md)
@@ -98,7 +98,9 @@ _My computer does not have a dedicated GPU but instead uses Intel integrated gra
 _This is the last resort_:
 Press Alt + Print Sceen + REISUB.
 
-This does not resolve the issue but only does a soft reboot of the system to hopefully troubleshoot the issue on next boot. 
+This does not resolve the issue but only does a soft reboot of the system to hopefully troubleshoot the issue on next boot.
+
+Inevitably, you may need to reboot. 
 
 ### reference:
 * [https://support.system76.com/articles/freezing-behavior/](https://support.system76.com/articles/freezing-behavior/)
