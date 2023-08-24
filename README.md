@@ -2,21 +2,26 @@
 _This is being revised on the fly, so please excuse some of the typos, etc as I am trying to resolve the issue while documenting the process._
 
 
-The Desktop for PopOs and sometimes the VMs, themselves, are locking up. When remote via `ssh` sometimes the shell freezes and other times it operates fine. Using `htop` shows system is running normal.   
+The Desktop for PopOs and sometimes the VMs, themselves, are locking up. When accessing the pc remotely via `ssh` sometimes the shell freezes and other times, operates fine. Using `htop` shows system is running normal.   
 
 Some of the solutions listed in this __README.md__ may resolve the issue(s). Results may vary since the configurations from everyones' machines are different. 
 
-As of this writing (_18Aug23_), I am still investigating solutions since the issue still persists. As long as I am __not__ using a browser on the host machine, it seems to "__delay__" the desktop from freezing.   
+As of this writing (_18Aug23_), I am still investigating solutions since the issue still persists. As long as I am __not__ using a browser on the host machine. The browser seems to "__delay__" the desktop from freezing.   
 
-The issue seemed to have happened after both a recent `update` and `upgrade`. 
+The origin of the desktop freezing seemed to have happened after both a recent `update` and `upgrade`. Below is a list of symptoms when the desktop freezes:
 
-* Occurs much faster when using a browser in the host computer, especially when many tabs are open.
-* Doesn't occur when locking the screen.
+
+* Occurs much faster when using a browser, that happens "faster" with Chromium based ones, in the host computer, especially when many tabs are open, YouTube is playing, and/or having a busy website open in one of the tabs.
+* The freezing Doesn't occur during the screen.
 * Seems to occur on `gnome` desktops.
 * PERFORMANCE
 	- No observable reduction in performance when `ssh` into machine when the desktop freezes. 
 * The issue may be a combination of issues. 
-* The fan speed increases when the screen freezes, but with no noticable increase in processes consuming hardware resources. 
+* The fan speed does increase when the screen freezes, but with no noticable increase in processes consuming sofware or hardware resources. 
+
+## WARNING
+
+__THE DESKTOP COULD POSSIBLE FREEZE WHILE YOU ARE `update/upgrade` AND YOU SHOULD WAIT UNTIL THE PROCESS FINISHES BEFORE YOU CONSIDER REBOOTING. WAITING A LITTLE AFTER THE FREEZE OCCURS DOESN'T HURT.'__
 
 # ROOT CAUSE
 These are the potential causes of the issue:
@@ -25,6 +30,7 @@ These are the potential causes of the issue:
 - Harddrive
 - GNOME
 - VM (recently updated)
+- Additional Attached Hardware
 
 __ERROR WHEN ISSUE ARISES FROM system logs__ (I redacted some info):
 ```
@@ -72,7 +78,7 @@ sudo nvme smart-log /dev/nvme0n1
 [Disable all gnome extensions.](GNOME-EXTENSIONS.md)
 
 ## GRAPHICS CARD DRIVER UPDATE
-_using Intel integrated graphics_ 
+_My computer does not have a dedicated GPU but instead uses Intel integrated graphics. Many resources described that when `updating | upgrading` the GPU drivers resolved the issue for some._ 
 
 - `sudo apt-get install xserver-xorg-video-intel # updates the intel integrated graphics drivers` 
 - `sudo apt autoremove # removes unused packages`
@@ -90,9 +96,9 @@ _using Intel integrated graphics_
 
 ## IF DESKTOP FROZEN
 _This is the last resort_:
-Press Alt + Print Sceen + REISUB. 
+Press Alt + Print Sceen + REISUB.
 
-This does not resolve the issue but only does a soft reboot of the system. 
+This does not resolve the issue but only does a soft reboot of the system to hopefully troubleshoot the issue on next boot. 
 
 ### reference:
 * [https://support.system76.com/articles/freezing-behavior/](https://support.system76.com/articles/freezing-behavior/)
