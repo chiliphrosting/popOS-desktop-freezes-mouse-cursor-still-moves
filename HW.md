@@ -20,10 +20,13 @@ machine that is freezing.
 
 # CONCLUSION
 
+- No `*ERRORS*` have occurred since unplugging the additional monitor at the time of this writing (25Aug23): PM.  
 - No `*ERRORS*` have occurred since unplugging the additional monitor at the time of this writing (24Aug23): PM.  
 - No `*ERRORS*` have occurred since unplugging the additional monitor at the time of this writing (23Aug23): PM.  
 - No `*ERRORS*` have occurred since unplugging the additional monitor at the time of this writing (23Aug23): AM.  
 - No `*ERRORS*` have occurred since unplugging the additional monitor at the time of this writing (22Aug23).  
+
+After reviewing `syslog` over the course of the week, I can confirm the reason is from the additional HDMI display. This issue did not exist prior to the `update/upgrade` from ~3 weeks ago. Early on, after that update, the pc desktop did lock up but only a couple of times. When attached to the external HDMI display, the problem persisted as time passed, progressively worsened. 
 
 <!--
 drafted: 
