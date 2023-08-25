@@ -43,24 +43,7 @@ DATE-TIME USER kernel: [ num ] i915 0000:00:02.0: [drm] *ERROR* [CRTC:131:pipe B
 
 ## INITIAL TESTS IF ISSUE IS FROM RAM or HD
 
-```bash
-
-gzip -d system76-logs.tgz
-
-free -h # checks the amount of free space on the device
-
-sudo apt update 
-
-sudo apt install memtester # checks available memory
-sudo memtester
-
- 
-sudo apt install nvme-cli # for nvme drive 
-sudo nvme list 
-sudo nvme smart-log /dev/nvme0n1
-```
-- The above returns no errors, they are not ruled out as being the culprit. The frequency of the occurance happens "faster" when several applications are running simultaneously. 
-- The gzip system76 log file(s) reviewed (24Aug23).
+[Check System76 system logs and test harddrive.](LOGS-NVME.md)
 
 ## HARDWARE DISCONNECT
 [Disconnecting the additional monitor.](HW.md)
@@ -78,29 +61,22 @@ sudo nvme smart-log /dev/nvme0n1
 [Disable all gnome extensions.](GNOME-EXTENSIONS.md)
 
 ## GRAPHICS CARD DRIVER UPDATE
-_My computer does not have a dedicated GPU but instead uses Intel integrated graphics. Many resources described that when `updating | upgrading` the GPU drivers resolved the issue for some._ 
 
-- `sudo apt-get install xserver-xorg-video-intel # updates the intel integrated graphics drivers` 
-- `sudo apt autoremove # removes unused packages`
+[Update the Intel integrated graphics card.](GRAPHICS-CARD.md)
 
 ## Xorg DISABLING
+[Shutoff Xorg](XORG.md)
 - `xset s off`
 
 ## SETTINGS CHANGE
-
-- Disable notifications
-- Disable HIDPI
+[Disable notifications and HIDPI.](HIDPI.md)
 
 ## GDM-X-SESSION
 [kill process gdm-x-session](GDM-X-SESSION.md)
 
 ## IF DESKTOP FROZEN
 _This is the last resort_:
-Press Alt + Print Sceen + REISUB.
-
-This does not resolve the issue but only does a soft reboot of the system to hopefully troubleshoot the issue on next boot.
-
-Inevitably, you may need to reboot. 
+[Soft reboot the PC.](REISUB.md)
 
 ### reference:
 * [https://support.system76.com/articles/freezing-behavior/](https://support.system76.com/articles/freezing-behavior/)
