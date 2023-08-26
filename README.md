@@ -12,7 +12,7 @@ The origin of the desktop freezing seemed to have happened after both a recent `
 
 
 * Occurs much faster when using a browser, that happens "faster" with Chromium based ones, in the host computer, especially when many tabs are open, YouTube is playing, and/or having a busy website open in one of the tabs.
-* The freezing Doesn't occur during the screen.
+* The freezing doesn't occur during the screen.
 * Seems to occur on `gnome` desktops.
 * PERFORMANCE
 	- No observable reduction in performance when `ssh` into machine when the desktop freezes. 
@@ -42,7 +42,6 @@ DATE-TIME USER kernel: [ num ] i915 0000:00:02.0: [drm] *ERROR* [CRTC:131:pipe B
 # STEPS
 
 ## INITIAL TESTS IF ISSUE IS FROM RAM or HD
-
 [Check System76 system logs and test harddrive.](LOGS-NVME.md)
 
 ## HARDWARE DISCONNECT
@@ -61,7 +60,6 @@ DATE-TIME USER kernel: [ num ] i915 0000:00:02.0: [drm] *ERROR* [CRTC:131:pipe B
 [Disable all gnome extensions.](GNOME-EXTENSIONS.md)
 
 ## GRAPHICS CARD DRIVER UPDATE
-
 [Update the Intel integrated graphics card.](GRAPHICS-CARD.md)
 
 ## Xorg DISABLING
@@ -85,6 +83,9 @@ _This is the last resort_:
 
 # CONCLUSION
 
+For my particular situation, this issue came from having the pc connected to an additional HDMI display. I confirmed this after monitoring `*ERROR*` no longer appeared in the `syslog` over the course of several days after the implemented change. 
+
+My situation could be different from yours. Over the course of several weeks, one or more of the solutions listed in this `README.md` might resolve a similar problem that you could be facing. 
 ___
 
 <!--

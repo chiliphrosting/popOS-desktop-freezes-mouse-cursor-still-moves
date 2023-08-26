@@ -29,6 +29,8 @@ __DO NOT POST THE IP ADDRESS AND MAC ADDRESS TO THE PUBLIC!__
 - Unknown if the `[UFW BLOCK]` is from the brand, model, or different applications. 
 - __REMOVING THE ROGUE DEVICE DID NOT RESULT IN PREVENTING THE ISSUE FROM OCCURRING.__
 
+This is a separate issue and will be investigated further. 
+
 <!--
 drafted: 
 21Aug23
